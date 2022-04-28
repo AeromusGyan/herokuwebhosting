@@ -22,8 +22,8 @@ const db = mysql.createConnection({
     connectionLimit :10
 });
 
-app.listen(process.env.APP_PORT || 3000,()=>{
-    console.log("Server is running on 3000 PORT, MINIGANS :", process.env.APP_PORT || 3000);
+app.listen(process.env.PORT || 3000,()=>{
+    console.log("Server is running on 3000 PORT, MINIGANS :", process.env.PORT || 3000);
 })
 
 //check database connection

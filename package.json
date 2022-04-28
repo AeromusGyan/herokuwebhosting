@@ -3,12 +3,13 @@
   "version": "1.0.0",
   "description": "MiniGANS web Application",
   "main": "index.js",
+  "private": true,
   "engines": {
     "node": "16.14.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
+    "start": "node index.js"
   },
   "author": "Gyan Prakash",
   "license": "ISC",
