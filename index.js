@@ -1,5 +1,7 @@
 require("dotenv").config();   //for env
 
+var port =process.env.PORT || 3000;
+
 const express =  require('express');
 const bodyparser = require('body-parser');
 const cors = require('cors');
@@ -22,8 +24,8 @@ const db = mysql.createConnection({
     connectionLimit :10
 });
 
-app.listen(process.env.PORT || 3000,()=>{
-    console.log("Server is running on 3000 PORT, MINIGANS :", process.env.PORT || 3000);
+app.listen(port,()=>{
+    console.log("Server is running on 3000 PORT, MINIGANS :", port);
 })
 
 //check database connection
